@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, ref } from "vue"
 import ButtonMore from "@/components/ButtonMore.vue"
+import EventSection from "@/components/EventSection.vue"
 import Lottie from "lottie-web"
 import { vBackgroundImage as vBg } from '@/plugin/directives'
 
@@ -37,20 +38,11 @@ const TopicItems = [
   ['美食', '#da7481', 'https://fakeimg.pl/300x200/','文章標題文章標題文章標題文章標題文章標題'],
 ].map(item => ({tag: item[0], color: item[1], image: item[2], title: item[3]}))
 
-const EventItems = [
-  ['測試1', 'https://google.com','https://fakeimg.pl/500x280/'],
-  ['測試1', 'https://google.com','https://fakeimg.pl/500x280/'],
-].map(item => ({title: item[0], url: item[1], image: item[2]}))
+
 </script>
 
 <template>
   <div class="home container">
-    <div class="home__deco">
-      <div class="home__deco-item"></div>
-      <div class="home__deco-item"></div>
-      <div class="home__deco-item"></div>
-      <div class="home__deco-item"></div>
-    </div>
 
     <!-- Player -->
     <div class="home__player home__section">
@@ -109,24 +101,12 @@ const EventItems = [
       </div>
     </div>
 
-    <!-- Events -->
-    <div class="home__event home__section">
-      <div class="home__title-wrap">
-        <div class="home__title-wrap-image-container">
-          <div class="home__title-wrap-image" ref="lottieEvent">
-          </div>
+    <EventSection class="home__event home__section">
+      <template #image>
+        <div class="home__title-wrap-image" ref="lottieEvent">
         </div>
-        <div class="home__title-wrap-text">
-          主題文章
-        </div>
-      </div>
-      <div class="home__event-list">
-        <div v-for="(item, key) in EventItems" class="home__event-list-item" :key="key" :style="{
-          backgroundImage: `url('${item.image}')`
-        }">
-        </div>
-      </div>
-    </div>
+      </template>
+    </EventSection>
 
     <!-- Direct -->
     <div class="home__direct home__section">
@@ -146,38 +126,7 @@ const EventItems = [
 <style lang='scss'>
 
 .home {
-  &__deco {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    left: 0;
-    right: 0;
-    &-item {
-      height: 900px;
-      position: relative;
-      &::before,&::after {
-        display: block;
-        position: absolute;
-        content:'';
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-      &::before {
-        top: 0;
-        left: 0;
-        width: 161px;
-        height: 234px;
-        background-image: url('@/assets/img_index_bg_left.png');
-      };
-      &::after {
-        width: 113px;
-	      height: 234px;
-        right: 0;
-        bottom: 0;
-        background-image: url('@/assets/img_index_bg_right.png');
-      }
-    }
-  }
+  
   &__section {
     position: relative;
     z-index: 2;
@@ -316,21 +265,6 @@ const EventItems = [
         transform: translate(65px, 0px);
       }
     }
-  
-    &-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 44px;
-      &-item {
-        position: relative;
-        &::before {
-          content: '';
-          display: block;
-          padding-bottom: 56%;
-        }
-      }
-    }
-
   }
 
   // Direct
