@@ -24,25 +24,32 @@ body {
   min-height: 100vh;
   background-color: #68c8ff;
 }
+
 #app {
   flex: 1 1 100%;
   width: 100%;
 }
+
 .app {
   overflow: hidden;
   padding-top: 108px;
+
   &__page {
     position: relative;
   }
+
   &__deco {
+    pointer-events: none;
     position: absolute;
     z-index: 1;
     width: 100%;
     left: 0;
     right: 0;
+
     &-item {
       height: 900px;
       position: relative;
+
       &::before,
       &::after {
         display: block;
@@ -51,6 +58,7 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
       }
+
       &::before {
         top: 0;
         left: 0;
@@ -58,6 +66,7 @@ body {
         height: 234px;
         background-image: url("@/assets/img_index_bg_left.png");
       }
+
       &::after {
         width: 113px;
         height: 234px;

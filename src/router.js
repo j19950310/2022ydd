@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory, createWebHistory } from "vue-router";
-
+import { posts } from '@/data'
 const routes = [
   {
     path: '/',
@@ -12,7 +12,12 @@ const routes = [
   {
     path: '/topic',
     component: () => import('@/views/Topic.vue')
-  }
+  },
+  {
+    path: '/topic/:slug',
+    component: () => import('@/views/_slug.vue'),
+    meta: { posts }
+  },
 ]
 
 const router = createRouter({

@@ -6,6 +6,7 @@ import { vBackgroundImage as vBg } from "@/plugin/directives";
 
 // import imgDecoLeft from '@/assets/img_index_bg_left.png';
 // import imgDecoRight from '@/assets/img_index_bg_right.png';
+import imgLogo from '@/assets/logo.png'
 
 const lottieTopic = ref(null);
 const lottieEvent = ref(null);
@@ -14,8 +15,8 @@ const pagination = ref(1);
 
 onMounted(() => {
   const [ILottieTopic, ILottieEvent] = [
-    ["Lottie/web_Blue_clound.json", lottieTopic.value],
-    ["Lottie/web_Pink_clound.json", lottieEvent.value],
+    ["/Lottie/web_Blue_clound.json", lottieTopic.value],
+    ["/Lottie/web_Pink_clound.json", lottieEvent.value],
   ].map(([path, container]) =>
     Lottie.loadAnimation({
       container,
@@ -75,7 +76,7 @@ const TopicItems = [
   ...templateTopicItems,
   ...templateTopicItems,
   ...templateTopicItems,
-];
+].map((post, index) => ({ ...post, index }));
 const currentTopicItems = computed(() =>
   TopicItems.slice((pagination.value - 1) * 9, pagination.value * 9)
 );
@@ -94,77 +95,47 @@ const currentTopicItems = computed(() =>
 
       <!-- Clamp Filter -->
       <div class="topic__filter">
-        <div
-          class="topic__filter-item"
-          :class="{
-            '-active': filterCurrent === 0,
-          }"
-          @click="filterCurrent = 0"
-        >
+        <div class="topic__filter-item" :class="{
+          '-active': filterCurrent === 0,
+        }" @click="filterCurrent = 0">
           全部
         </div>
-        <div
-          class="topic__filter-item"
-          :class="{
-            '-active': filterCurrent === 1,
-          }"
-          @click="filterCurrent = 1"
-        >
+        <div class="topic__filter-item" :class="{
+          '-active': filterCurrent === 1,
+        }" @click="filterCurrent = 1">
           美食
         </div>
-        <div
-          class="topic__filter-item"
-          :class="{
-            '-active': filterCurrent === 2,
-          }"
-          @click="filterCurrent = 2"
-        >
+        <div class="topic__filter-item" :class="{
+          '-active': filterCurrent === 2,
+        }" @click="filterCurrent = 2">
           人文
         </div>
-        <div
-          class="topic__filter-item"
-          :class="{
-            '-active': filterCurrent === 3,
-          }"
-          @click="filterCurrent = 3"
-        >
+        <div class="topic__filter-item" :class="{
+          '-active': filterCurrent === 3,
+        }" @click="filterCurrent = 3">
           景點
         </div>
       </div>
 
-      <div class="home__topic-list">
-        <div
-          v-for="(item, key) in currentTopicItems"
-          class="home__topic-list-item"
-          :key="key"
-        >
-          <div
-            class="home__topic-list-item-img"
-            :style="{
-              backgroundImage: `url('${item.image}')`,
-            }"
-          ></div>
-          <div
-            class="home__topic-list-item-tag"
-            :style="{
-              '--color': item.color,
-            }"
-          >
+      <TransitionGroup name="list" tag="div" class="home__topic-list" mode="out-in">
+        <div v-for="(item, key) in currentTopicItems" class="home__topic-list-item" :key="item.index">
+          <div class="home__topic-list-item-img" :style="{
+            backgroundImage: `url('${item.image}')`,
+          }"></div>
+          <div class="home__topic-list-item-tag" :style="{
+            '--color': item.color,
+          }">
             {{ item.tag }}
           </div>
           <h3 class="home__topic-list-item-title">
             {{ item.title }}
           </h3>
         </div>
-      </div>
+      </TransitionGroup>
       <!-- Clamp Pagination -->
       <div class="topic__pagination">
-        <div
-          class="topic__pagination-item"
-          v-for="i in Math.ceil(TopicItems.length / 9)"
-          :class="{ '-active': pagination === i }"
-          @click="pagination = i"
-        >
+        <div class="topic__pagination-item" v-for="i in Math.ceil(TopicItems.length / 9)"
+          :class="{ '-active': pagination === i }" @click="pagination = i">
           {{ i }}
         </div>
       </div>
@@ -175,6 +146,10 @@ const currentTopicItems = computed(() =>
         <div class="home__title-wrap-image" ref="lottieEvent"></div>
       </template>
     </EventSection>
+    <!-- Direct -->
+    <div class="home__direct home__section">
+      <img :src="imgLogo" alt="" class="home__direct-logo">
+    </div>
   </div>
 </template>
 
@@ -183,12 +158,14 @@ const currentTopicItems = computed(() =>
   .home__topic {
     z-index: 3;
   }
+
   &__filter {
     width: 472px;
     margin: 40px auto 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     &-item {
       padding: 0px 24px;
       font-size: 24px;
@@ -198,20 +175,24 @@ const currentTopicItems = computed(() =>
       color: #ffffff;
       transition: 0.3s;
       cursor: pointer;
+
       &.-active {
         color: #68c8ff;
         background-color: #ffffff;
       }
+
       @include hover {
         color: #68c8ff;
         background-color: #ffffff;
       }
     }
   }
+
   &__pagination {
     display: flex;
     align-items: center;
     justify-content: center;
+
     &-item {
       margin: 40px 12px;
       padding-bottom: 4px;
@@ -226,10 +207,12 @@ const currentTopicItems = computed(() =>
       border-radius: 24px;
       color: #ffffff;
       transition: 0.3s;
+
       &.-active {
         color: #68c8ff;
         background-color: #ffffff;
       }
+
       @include hover {
         color: #68c8ff;
         background-color: #ffffff;
