@@ -18,11 +18,18 @@ import Header from "@/components/Header.vue";
 </template>
 
 <style lang="scss">
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+  height: 100%;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100%;
   background-color: #68c8ff;
+  overflow: auto;
 }
 
 #app {

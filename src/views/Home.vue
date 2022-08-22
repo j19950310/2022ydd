@@ -97,7 +97,9 @@ const TopicItems = [
         </div>
       </div>
       <div class="home__topic-all">
-        <ButtonMore class="home__topic-all-btn"></ButtonMore>
+        <router-link to="/topic">
+          <ButtonMore class="home__topic-all-btn"></ButtonMore>
+        </router-link>
       </div>
     </div>
 
