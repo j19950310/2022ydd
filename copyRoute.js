@@ -54,7 +54,11 @@ const init = async () => {
     checkDir(to)
   
     await fs.copyFileSync(fromFile, toFile);
-  
+  }
+
+  for (let i = 0; i < list.length; i++) {
+    const [from, to, meta] = list[i]
+    const toFile = `${to}/index.html`
     let content = await fs.readFileSync(toFile, 'utf-8')
     for (let index = 0; index < regexList.length; index++) {
       const [regex, key] = regexList[index];
