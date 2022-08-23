@@ -1,7 +1,11 @@
 <script setup>
+import { vBackgroundImage as vBg } from '@/plugin/directives'
+import img1 from '@/assets/event/P1.jpg'
+import img2 from '@/assets/event/P2.jpg'
+
 const EventItems = [
-  ['測試1', 'https://google.com', 'https://fakeimg.pl/500x280/'],
-  ['測試1', 'https://google.com', 'https://fakeimg.pl/500x280/'],
+  ['三小市集', 'https://www.tri-small.com/', img1],
+  ['雲林食務所', 'https://www.facebook.com/yunlingfooding/ ', img2],
 ].map(item => ({ title: item[0], url: item[1], image: item[2] }))
 </script>
 <template>
@@ -12,13 +16,12 @@ const EventItems = [
         <slot name="image"></slot>
       </div>
       <div class="home__title-wrap-text">
-        主題文章
+        活動推薦
       </div>
     </div>
     <div class="event-section-list">
-      <div v-for="(item, key) in EventItems" class="event-section-list-item" :key="key" :style="{
-        backgroundImage: `url('${item.image}')`
-      }">
+      <div v-for="(item, key) in EventItems" class="event-section-list-item" :key="key" v-bg="item.image">
+        <a :href="item.url"></a>
       </div>
     </div>
   </div>
@@ -38,6 +41,10 @@ const EventItems = [
 
     &-item {
       position: relative;
+
+      a {
+        @include link;
+      }
 
       &::before {
         content: '';

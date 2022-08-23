@@ -66,7 +66,9 @@ onMounted(() => {
       </div>
       <div class="page-slug__block" v-for="(block, index) in blocks" :key="'block_' + index">
         <div v-if="block.type === 'text'" class="page-slug__block-text" v-text="block.text"></div>
-        <div v-else-if="block.type === 'img'" class="page-slug__block-img" v-bg="block.img"></div>
+        <div v-else-if="block.type === 'img'" class="page-slug__block-img" v-bg="block.img">
+          <img v-show="false" src="block.img" :alt="block.alt">
+        </div>
         <div v-else-if="block.type === 'album'" class="page-slug__block-album">
           <div class="page-slug__block-album-item" v-for="(item, _index) in block.album"
             :key="index + 'album' + _index">
@@ -156,6 +158,8 @@ onMounted(() => {
     }
 
     &-img {
+      margin-top: 67px;
+
       &::before {
         content: '';
         display: block;

@@ -23,12 +23,32 @@ const list = [
   ],
   [
     './dist',
+    './dist/topic/huwei-joint-office',
+    {
+      TITLE: "雲的觀察日誌 | 【雲林美食#文化歷史建築】悠遊歷史樣貌，在消防局裡的咖啡茶香「虎尾合同廳舍」",
+      URL: '/topic/huwei-joint-office',
+      DESC: '【雲林美食#文化歷史建築】悠遊歷史樣貌，在消防局裡的咖啡茶香「虎尾合同廳舍」',
+      IMAGE: '/yunlin-puppet-theater/yunlin_puppet_theater_001.jpg'
+    }
+  ],
+  [
+    './dist',
     './dist/topic/yunlin-puppet-theater',
     {
       TITLE: "雲的觀察日誌|雲林文化探索#文化歷史建築】五、六年級生的回憶！掌中戲之鄉虎尾必訪特色景點「雲林布袋戲館」",
-      URL: '/topic',
-      DESC: '精選文章',
-      IMAGE: '/assets/img_slogan.4962dfee.png'
+      URL: '/topic/yunlin-puppet-theater',
+      DESC: '【雲林文化探索#文化歷史建築】穿梭城市光景中的時光秘境，虎尾人的舊回憶「雲林故事館」',
+      IMAGE: '/yunlin-puppet-theater/yunlin_puppet_theater_001.jpg'
+    }
+  ],
+  [
+    './dist',
+    './dist/topic/yunlin-story-house',
+    {
+      TITLE: "雲的觀察日誌|雲林文化探索#文化歷史建築】五、六年級生的回憶！掌中戲之鄉虎尾必訪特色景點「雲林布袋戲館」",
+      URL: '/topic/yunlin-story-house',
+      DESC: '【雲林文化探索#文化歷史建築】穿梭城市光景中的時光秘境，虎尾人的舊回憶「雲林故事館」',
+      IMAGE: '/yunlin-puppet-theater/yunlin_puppet_theater_001.jpg'
     }
   ],
 ]
