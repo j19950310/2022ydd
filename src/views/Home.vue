@@ -2,14 +2,25 @@
 import { onMounted, ref } from "vue"
 import ButtonMore from "@/components/ButtonMore.vue"
 import EventSection from "@/components/EventSection.vue"
+import Video from "@/components/Video.vue"
 import Lottie from "lottie-web"
 import { vBackgroundImage as vBg } from '@/plugin/directives'
+import { useMediaQuery } from '@vueuse/core'
 
 import imgSlogan from "@/assets/img_slogan.png"
 import imgMascot from "@/assets/img_mascot.png"
 import imgLogo from '@/assets/logo.png'
+import banner from '@/assets/banner/banner.jpg'
+import bannerMobile from '@/assets/banner/banner_mobile.jpg'
+
+import video1 from "@/assets/video/新聞處影視補助_布袋戲篇.mp4"
+import video2 from "@/assets/video/新聞處影視補助_花生篇.mp4"
+import video3 from "@/assets/video/新聞處影視補助_番薯篇.mp4"
+
+import { posts, tags } from '@/data'
 // import imgDecoLeft from '@/assets/img_index_bg_left.png';
 // import imgDecoRight from '@/assets/img_index_bg_right.png';
+const isMobile = useMediaQuery('(max-width: 576px)')
 
 const lottieYouKnow = ref(null)
 const lottieTopic = ref(null)
@@ -29,97 +40,106 @@ onMounted(() => {
   }))
 })
 
-const TopicItems = [
-  ['美食', '#da7481', 'https://fakeimg.pl/300x200/', '文章標題文章標題文章標題文章標題文章標題'],
-  ['人文', '#0f9fb9', 'https://fakeimg.pl/300x200/', '文章標題文章標題文章標題文章標題文章標題'],
-  ['人文', '#0f9fb9', 'https://fakeimg.pl/300x200/', '文章標題文章標題文章標題文章標題文章標題'],
-  ['景點', '#ea9700', 'https://fakeimg.pl/300x200/', '文章標題文章標題文章標題文章標題文章標題'],
-  ['美食', '#da7481', 'https://fakeimg.pl/300x200/', '文章標題文章標題文章標題文章標題文章標題'],
-  ['美食', '#da7481', 'https://fakeimg.pl/300x200/', '文章標題文章標題文章標題文章標題文章標題'],
-].map(item => ({ tag: item[0], color: item[1], image: item[2], title: item[3] }))
+const TopicItems = posts.map(item => {
+  const { slug, title, tag: _tag } = item
+  const tag = tags.find(tag => tag.key === _tag)
+  const image = item.content.find((block) => block.type === 'img')
+  return {
+    to: `/topic/${slug}`,
+    tag: tag.name,
+    color: tag.color,
+    image: image && image.img,
+    title
+  }
+})
 
 
 </script>
 
 <template>
-  <div class="home container">
-
-    <!-- Player -->
-    <div class="home__player home__section">
-      <div class="home__title-wrap">
-        <div class="home__title-wrap-image-container">
-          <div class="home__title-wrap-image" ref="lottieYouKnow">
-          </div>
-        </div>
-        <div class="home__title-wrap-text">
-          哎！你知道嗎?
-        </div>
-      </div>
-      <div class="home__player-list">
-        <div class="home__player-list-item" v-bg="'https://fakeimg.pl/270x480/'">
-
-        </div>
-        <div class="home__player-list-item" v-bg="'https://fakeimg.pl/270x480/'">
-
-        </div>
-        <div class="home__player-list-item" v-bg="'https://fakeimg.pl/270x480/'">
-
-        </div>
-      </div>
+  <div class="home ">
+    <div class="home__banner">
+      <div v-if="!isMobile" class="home__banner-img" v-bg="banner"></div>
+      <div v-else class="home__banner-img-mobile" v-bg="bannerMobile"></div>
     </div>
 
-    <!-- Topic -->
-    <div class="home__topic home__section">
-      <div class="home__title-wrap">
-        <div class="home__title-wrap-image-container">
-          <div class="home__title-wrap-image" ref="lottieTopic">
+    <div class="container">
+      <!-- Player -->
+      <div class="home__player home__section">
+        <div class="home__title-wrap">
+          <div class="home__title-wrap-image-container">
+            <div class="home__title-wrap-image" ref="lottieYouKnow">
+            </div>
+          </div>
+          <div class="home__title-wrap-text">
+            哎！你知道嗎?
           </div>
         </div>
-        <div class="home__title-wrap-text">
-          主題文章
-        </div>
-      </div>
-      <div class="home__topic-list">
-        <div v-for="(item, key) in TopicItems" class="home__topic-list-item" :key="key">
-          <div class="home__topic-list-item-img" :style="{
-            backgroundImage: `url('${item.image}')`
-          }">
-
+        <div class="home__player-list">
+          <div class="home__player-list-item" v-bg="'https://fakeimg.pl/270x480/'">
+            <Video :src="video1"></Video>
           </div>
-          <div class="home__topic-list-item-tag" :style="{
-            '--color': item.color,
-          }">
-            {{ item.tag }}
+          <div class="home__player-list-item" v-bg="'https://fakeimg.pl/270x480/'">
+            <Video :src="video2"></Video>
           </div>
-          <h3 class="home__topic-list-item-title">
-            {{ item.title }}
-          </h3>
+          <div class="home__player-list-item" v-bg="'https://fakeimg.pl/270x480/'">
+            <Video :src="video3"></Video>
+          </div>
         </div>
       </div>
-      <div class="home__topic-all">
-        <router-link to="/topic">
-          <ButtonMore class="home__topic-all-btn"></ButtonMore>
-        </router-link>
-      </div>
-    </div>
 
-    <EventSection class="home__event home__section">
-      <template #image>
-        <div class="home__title-wrap-image" ref="lottieEvent">
+      <!-- Topic -->
+      <div class="home__topic home__section">
+        <div class="home__title-wrap">
+          <div class="home__title-wrap-image-container">
+            <div class="home__title-wrap-image" ref="lottieTopic">
+            </div>
+          </div>
+          <div class="home__title-wrap-text">
+            主題文章
+          </div>
         </div>
-      </template>
-    </EventSection>
+        <div class="home__topic-list">
+          <div v-for="(item, key) in TopicItems" class="home__topic-list-item" :key="key">
+            <div class="home__topic-list-item-img" v-bg="item.image">
 
-    <!-- Direct -->
-    <div class="home__direct home__section">
-      <img :src="imgMascot" alt="" class="home__direct-mascot">
-      <img :src="imgSlogan" alt="" class="home__direct-slogan">
-      <div class="home__direct-more">
-        瞭解更多雲的觀察日誌
-        <div class="home__direct-more-arrow"></div>
-        <ButtonMore class="home__direct-more-btn"></ButtonMore>
+            </div>
+            <div class="home__topic-list-item-tag" :style="{
+              '--color': item.color,
+            }">
+              {{ item.tag }}
+            </div>
+            <h3 class="home__topic-list-item-title">
+              {{ item.title }}
+            </h3>
+            <router-link :to="item.to"></router-link>
+          </div>
+        </div>
+        <div class="home__topic-all">
+          <router-link to="/topic">
+            <ButtonMore class="home__topic-all-btn"></ButtonMore>
+          </router-link>
+        </div>
       </div>
-      <img :src="imgLogo" alt="" class="home__direct-logo">
+
+      <EventSection class="home__event home__section">
+        <template #image>
+          <div class="home__title-wrap-image" ref="lottieEvent">
+          </div>
+        </template>
+      </EventSection>
+
+      <!-- Direct -->
+      <div class="home__direct home__section">
+        <img :src="imgMascot" alt="" class="home__direct-mascot">
+        <img :src="imgSlogan" alt="" class="home__direct-slogan">
+        <div class="home__direct-more">
+          瞭解更多雲的觀察日誌
+          <div class="home__direct-more-arrow"></div>
+          <ButtonMore class="home__direct-more-btn"></ButtonMore>
+        </div>
+        <img :src="imgLogo" alt="" class="home__direct-logo">
+      </div>
     </div>
   </div>
 </template>

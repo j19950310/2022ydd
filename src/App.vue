@@ -20,7 +20,7 @@ import Header from "@/components/Header.vue";
 <style lang="scss">
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
+  // overflow: hidden;
   height: 100%;
 }
 
@@ -29,7 +29,7 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: #68c8ff;
-  overflow: auto;
+  // overflow: auto;
 }
 
 #app {
