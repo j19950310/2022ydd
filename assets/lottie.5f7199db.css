@@ -1,1 +1,0 @@
-.event-section-list{display:grid;grid-template-columns:repeat(2,1fr);grid-gap:44px}@media (max-width: 767.98px){.event-section-list{display:grid;grid-template-columns:1fr;grid-gap:44px}}.event-section-list-item{position:relative}.event-section-list-item:before{content:"";display:block;padding-bottom:56%}
