@@ -1,7 +1,8 @@
 import fs from 'fs'
-import yunlinPuppetTheater from './src/data/yunlinPuppetTheater.json'
-import huweiJointOffice from './src/data/huweiJointOffice.json'
-import yunlinStoryHouse from './src/data/yunlinStoryHouse.json'
+import yunlinPuppetTheater from './src/data/yunlinPuppetTheater.json';
+import huweiJointOffice from './src/data/huweiJointOffice.json';
+import yunlinStoryHouse from './src/data/yunlinStoryHouse.json';
+
 
 const posts = [
   yunlinPuppetTheater,
