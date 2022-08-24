@@ -1,5 +1,13 @@
 import fs from 'fs'
-import { posts } from './src/data.js' assert {type: "json"}
+import yunlinPuppetTheater from './src/data/yunlinPuppetTheater.json'
+import huweiJointOffice from './src/data/huweiJointOffice.json'
+import yunlinStoryHouse from './src/data/yunlinStoryHouse.json'
+
+const posts = [
+  yunlinPuppetTheater,
+huweiJointOffice,
+yunlinStoryHouse
+]
 const postsMeta = posts.map((post)=>([
   './dist',
   `./dist/topic/${post.slug}`,
@@ -11,7 +19,6 @@ const postsMeta = posts.map((post)=>([
   }
 ]))
 
-console.log(postsMeta)
 const list = [
   [ // HOME
     './dist',
