@@ -3,6 +3,8 @@ import { onMounted, ref, computed } from "vue";
 import EventSection from "@/components/EventSection.vue";
 import Lottie from "lottie-web";
 import { vBackgroundImage as vBg } from "@/plugin/directives";
+import { posts, tags, mapPostItem } from '@/data'
+import TopicItem from "@/components/TopicItem.vue"
 
 // import imgDecoLeft from '@/assets/img_index_bg_left.png';
 // import imgDecoRight from '@/assets/img_index_bg_right.png';
@@ -10,8 +12,9 @@ import imgLogo from '@/assets/logo.png'
 
 const lottieTopic = ref(null);
 const lottieEvent = ref(null);
-const filterCurrent = ref(0);
+const filterCurrent = ref("");
 const pagination = ref(1);
+const TopicItems = posts.map(mapPostItem)
 
 onMounted(() => {
   const [ILottieTopic, ILottieEvent] = [
@@ -28,58 +31,15 @@ onMounted(() => {
   );
 });
 
-const templateTopicItems = [
-  [
-    "美食",
-    "#da7481",
-    "https://fakeimg.pl/300x200/",
-    "文章標題文章標題文章標題文章標題文章標題",
-  ],
-  [
-    "人文",
-    "#0f9fb9",
-    "https://fakeimg.pl/300x200/",
-    "文章標題文章標題文章標題文章標題文章標題",
-  ],
-  [
-    "人文",
-    "#0f9fb9",
-    "https://fakeimg.pl/300x200/",
-    "文章標題文章標題文章標題文章標題文章標題",
-  ],
-  [
-    "景點",
-    "#ea9700",
-    "https://fakeimg.pl/300x200/",
-    "文章標題文章標題文章標題文章標題文章標題",
-  ],
-  [
-    "美食",
-    "#da7481",
-    "https://fakeimg.pl/300x200/",
-    "文章標題文章標題文章標題文章標題文章標題",
-  ],
-  [
-    "美食",
-    "#da7481",
-    "https://fakeimg.pl/300x200/",
-    "文章標題文章標題文章標題文章標題文章標題",
-  ],
-].map((item) => ({
-  tag: item[0],
-  color: item[1],
-  image: item[2],
-  title: item[3],
-}));
+const currentTopicItems = computed(() => {
+  if (!filterCurrent.value) {
+    return TopicItems.slice((pagination.value - 1) * 9, pagination.value * 9)
+  }
 
-const TopicItems = [
-  ...templateTopicItems,
-  ...templateTopicItems,
-  ...templateTopicItems,
-].map((post, index) => ({ ...post, index }));
-const currentTopicItems = computed(() =>
-  TopicItems.slice((pagination.value - 1) * 9, pagination.value * 9)
-);
+  const arr = TopicItems.filter((item) => item.tagKey === filterCurrent.value)
+
+  return arr.slice((pagination.value - 1) * 9, pagination.value * 9)
+});
 </script>
 
 <template>
@@ -96,41 +56,20 @@ const currentTopicItems = computed(() =>
       <!-- Clamp Filter -->
       <div class="topic__filter">
         <div class="topic__filter-item" :class="{
-          '-active': filterCurrent === 0,
-        }" @click="filterCurrent = 0">
+          '-active': filterCurrent === '',
+        }" @click="filterCurrent = ''">
           全部
         </div>
-        <div class="topic__filter-item" :class="{
-          '-active': filterCurrent === 1,
-        }" @click="filterCurrent = 1">
-          美食
-        </div>
-        <div class="topic__filter-item" :class="{
-          '-active': filterCurrent === 2,
-        }" @click="filterCurrent = 2">
-          人文
-        </div>
-        <div class="topic__filter-item" :class="{
-          '-active': filterCurrent === 3,
-        }" @click="filterCurrent = 3">
-          景點
+        <div class="topic__filter-item" v-for="tag in tags" :key="tag.key" :class="{
+          '-active': filterCurrent === tag.key,
+        }" @click="filterCurrent = tag.key">
+          {{ tag.name }}
         </div>
       </div>
 
       <TransitionGroup name="list" tag="div" class="home__topic-list" mode="out-in">
-        <div v-for="(item, key) in currentTopicItems" class="home__topic-list-item" :key="item.index">
-          <div class="home__topic-list-item-img" :style="{
-            backgroundImage: `url('${item.image}')`,
-          }"></div>
-          <div class="home__topic-list-item-tag" :style="{
-            '--color': item.color,
-          }">
-            {{ item.tag }}
-          </div>
-          <h3 class="home__topic-list-item-title">
-            {{ item.title }}
-          </h3>
-        </div>
+        <TopicItem v-for="(item, key) in currentTopicItems" v-bind="item" :key="item.slug">
+        </TopicItem>
       </TransitionGroup>
       <!-- Clamp Pagination -->
       <div class="topic__pagination">

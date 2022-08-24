@@ -153,6 +153,12 @@ onMounted(() => {
   }
 
   &__block {
+    &:nth-child(2) {
+      &>* {
+        padding-top: 0;
+      }
+    }
+
     &:last-child {
       padding-bottom: 67px;
     }

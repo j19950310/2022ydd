@@ -18,7 +18,7 @@ jobs:
         run: |
           yarn
           yarn build
-          node copyRoute.js
+          node --experimental-json-modules copyRoute.js
       - name: Deploy to GitHub Page
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:

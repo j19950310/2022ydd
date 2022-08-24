@@ -1,11 +1,12 @@
 {
   "slug": "yunlin-story-house",
   "title": "【雲林文化探索#文化歷史建築】穿梭城市光景中的時光秘境，虎尾人的舊回憶「雲林故事館」",
+  "share": "/yunlin-story-house/yunlin_story_house01.jpg",
   "tag": "humanities",
   "date": "",
-  "location": "632雲林縣虎尾鎮林森路一段9999號",
-  "phone": "05-00000",
-  "hour": "00:00-00:00",
+  "location": "雲林縣虎尾鎮林森路一段528號",
+  "phone": "05-6311436",
+  "hour": "10:00-19:00",
   "tags": [
     "雲林",
     "虎尾",
@@ -21,10 +22,6 @@
   ],
   "content": [
     {
-      "type": "img",
-      "img": "https://fakeimg.pl/1011x675/"
-    },
-    {
       "type": "text",
       "text": "來到雲林虎尾，除了令人垂涎三尺的老街美食，你一定會被林森路上幾棟台灣舊日式建築所吸引，而今日我們將引你一同窺探「雲林故事館」，承載虎尾人記憶的處所。雲林故事館過去為虎尾郡郡守官邸，創建日期大約於在日治大正時期9-12年（西元1920-1923年），與鄰近的虎尾郡役所（今日雲林布袋戲館）及合同廳舍（今日誠品書局據點）三處，構成完整的歷史廳舍建築群，彰顯日治時期虎尾被設治的意涵。"
     },
@@ -32,24 +29,200 @@
       "type": "album",
       "album": [
         {
-          "img": "https://fakeimg.pl/380x213/",
+          "img": "/yunlin-story-house/yunlin_story_house01.jpg",
           "title": "藏身與十字路口的雲林故事館"
         },
         {
-          "img": "https://fakeimg.pl/380x213/",
-          "title": "進入園區後，彷彿穿越時空"
+          "img": "/yunlin-story-house/yunlin_story_house02.jpg",
+          "title": "進入園區後，彷彿穿越時空。"
         },
         {
-          "img": "https://fakeimg.pl/380x213/"
+          "img": "/yunlin-story-house/yunlin_story_house03.jpg",
+          "title": ""
         },
         {
-          "img": "https://fakeimg.pl/380x213/"
+          "img": "/yunlin-story-house/yunlin_story_house04.jpg",
+          "title": ""
         }
       ]
     },
     {
       "type": "text",
       "text": "雲林故事館興建之初主要作為日治時期虎尾郡郡守們的宿舍，一入內就會看到挑高木造的日式玄關，穿上現場提供的草蓆鞋，讓參觀者有一種實際生活與此的日常想像。"
+    },
+    {
+      "type": "album",
+      "album": [
+        {
+          "img": "/yunlin-story-house/yunlin_story_house05.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house06.jpg",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "由玄關入內，會看見應接室與茶之間，過去為接待訪客及款待宴客的場所，分別於玄關左右兩側，現今放置許多在地創作的繪本與說故事箱供人玩賞與閱讀。"
+    },
+    {
+      "type": "album",
+      "album": [
+        {
+          "img": "/yunlin-story-house/yunlin_story_house07.jpg",
+          "title": "解說人員熱情解說故事箱使用方式"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house08.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house09.jpg",
+          "title": "玄關映入眼簾的木質家具及生活小物。"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house10.jpg",
+          "title": "充滿書香的雲林在地故事繪本"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house11.jpg",
+          "title": "「茶之間」日式風格濃烈的建築巧思。"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house12.jpg",
+          "title": "「應接室」靜坐在塔塔米上的光景。"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "而穿過走廊後，可以看到過去僕人的居所「女中」及古色古香的石造浴室及廁所，解說人員也興致勃勃地向我分享：「你可以發現日式建築看起來都非常相似，那是因為日本人嚴謹的做事風格與態度，對於建築規範有一定的模式與標準，像是日劇中常常可以看到女僕端茶的長廊—現今日式建築常見的緣側，在雲林故事館已可以發現」，像是「居間」與「座敷」，即是此款建築物一定會有的空間，而兩側互相對稱的塔塔米，平衡而和諧，也是經過量測與規範的建築設計，處處充滿細節，光是細細走訪屋子的每個角落，就足以度過午後悠閒的時光，忘卻窗外車聲喧囂，沉浸於木質細膩溫潤的氣息裡，無法自拔。"
+    },
+    {
+      "type": "album",
+      "album": [
+        {
+          "img": "/yunlin-story-house/yunlin_story_house13.jpg",
+          "title": "「女中」現為辦公場所，令人玩味。"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house14.jpg",
+          "title": "「女中」過往出入的門口堆著舊物。"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house15.jpg",
+          "title": "舊式浴室充滿空間的穿透性，迷人的光線。"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house16.jpg",
+          "title": "編竹夾尼土牆，昔日古老工法。"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house17.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house18.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house19.jpg",
+          "title": "居間」與「座敷」，日劇常見的長廊與說書用的繪本與木箱。"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house20.jpg",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "最有趣的是，女廁的把手充滿玄機，聽說連日本人來參觀時，都會對這個隱密又有趣的設計感到驚奇。"
+    },
+    {
+      "type": "album",
+      "album": [
+        {
+          "img": "/yunlin-story-house/yunlin_story_house21.jpg",
+          "title": "隱密的門把設計。"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house22.jpg",
+          "title": "推開第三的木條才得以解鎖。"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "而現在剛好為紙雕藝術家 - 洪新富先生的展覽，其設計創作的理念，不如大家對「設計」天馬行空的刻板印象，而是加入許多物理研究與數理計算，這也讓他的紙雕藝術獨樹一格。除了展示他多年的個人玩具收藏，也有他自己改良設計的紙雕玩具，像是洪新富先生花了八年，研究舊北京的古老工藝，簡化而製作而成的「偶依戲」。還有舊時期的孩童玩具「啄木鳥」，已經由機關的改良與造型的創新，令人感到驚奇有趣。搭配走廊上所推廣的雲林在地圖文作家的繪本作品，以及放置於角落的拉洋片說書車，各種文稿與插畫整齊陳列在窗角的木椅上，一個個故事木箱推砌，彷彿等待著誰繼續轉動把手，讓下一頁故事得以繼續下去。"
+    },
+    {
+      "type": "album",
+      "album": [
+        {
+          "img": "/yunlin-story-house/yunlin_story_house23.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house24.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house25.jpg",
+          "title": "展覽物品與玩具收藏。"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house26.jpg",
+          "title": "洪新富先生收藏，會發出樂音的管。"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house27.jpg",
+          "title": "導覽人員解釋「偶依戲」玩法與概念"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house28.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house29.jpg",
+          "title": "導覽人員解釋「啄木鳥」玩法與概念"
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house30.jpg",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "走出建築物外，廳院裡也充滿巧思，除了放置於桌面上的骨董童玩外，整齊吊掛的晴天娃娃，也在微風的吹拂下，一擺一擺地，令人心情不自覺得愉悅起來。穿上木屐踏入後院，還有社區居民一同運用老屋整修的磁磚，齊力創作的十三生肖拼貼藝術，更添雲林故事館的新的故事與現代的對話。"
+    },
+    {
+      "type": "album",
+      "album": [
+        {
+          "img": "/yunlin-story-house/yunlin_story_house31.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house32.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house33.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-story-house/yunlin_story_house34.jpg",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "如果有空的話，來雲林虎尾逛逛，改受舊有古色，一齊品味古香吧！"
     }
   ]
 }

@@ -1,10 +1,11 @@
 {
   "slug": "huwei-joint-office",
   "title": "【雲林美食#文化歷史建築】悠遊歷史樣貌，在消防局裡的咖啡茶香「虎尾合同廳舍」",
+  "share": "/huwei-joint-office/huwei_joint_office01.jpg",
   "tag": "food",
   "date": "",
   "location": "632雲林縣虎尾鎮林森路一段491號",
-  "phone": "05-6311436",
+  "phone": "",
   "hour": "11:00-21:00",
   "tags": [
     "雲林",
@@ -20,36 +21,125 @@
     "雲林超廣角"
   ],
   "content": [
-    {
-      "type": "img",
-      "img": "https://fakeimg.pl/1011x675/"
-    },
+
     {
       "type": "text",
-      "text": "來到雲林虎尾，除了令人垂涎三尺的老街美食，你一定會被林森路上幾棟台灣舊日式建築所吸引，而今日我們將引你一同窺探「雲林故事館」，承載虎尾人記憶的處所。雲林故事館過去為虎尾郡郡守官邸，創建日期大約於在日治大正時期9-12年（西元1920-1923年），與鄰近的虎尾郡役所（今日雲林布袋戲館）及合同廳舍（今日誠品書局據點）三處，構成完整的歷史廳舍建築群，彰顯日治時期虎尾被設治的意涵。"
+      "text": "你在古蹟裡的喝過咖啡嗎？這裡是虎尾合同廳舍，為台灣日治期間所建置的消防建築，建造於昭和5年，與鄰近的虎尾郡役所（今日雲林布袋戲館）及虎尾郡郡守官邸（今日雲林故事館）三處，構成完整的歷史廳舍建築群，四層樓高的塔式閣樓，讓經過的人車目不轉睛，「合同廳舍」其實是日治時期公部門辦公廳舍的建築類型之一，「合同」意指合署辦公，在空間組織上，將不同的空間透過獨立的出入動線串聯，將各種單位體促成完整的建築。目前台灣現存與此相同的建築物，為人熟知還有台南合同廳舍與基隆港合同廳舍。而虎尾合同廳舍更曾經為虎尾最高的建築物地標，現今被作為星巴克與誠品書局的據點，成為年輕人喜愛的文藝場所。"
     },
     {
       "type": "album",
       "album": [
         {
-          "img": "https://fakeimg.pl/380x213/",
-          "title": "藏身與十字路口的雲林故事館"
+          "img": "/huwei-joint-office/huwei_joint_office01.jpg",
+          "title": "設立於門口的招牌。"
         },
         {
-          "img": "https://fakeimg.pl/380x213/",
-          "title": "進入園區後，彷彿穿越時空"
+          "img": "/huwei-joint-office/huwei_joint_office02.jpg",
+          "title": "整體建築物外貌 ，充滿歷史風味。"
         },
         {
-          "img": "https://fakeimg.pl/380x213/"
+          "img": "/huwei-joint-office/huwei_joint_office03.jpg",
+          "title": "石造的象徵標示，精緻好看。"
         },
         {
-          "img": "https://fakeimg.pl/380x213/"
+          "img": "/huwei-joint-office/huwei_joint_office04.jpg",
+          "title": "老窗櫺充滿時間的蹤跡。"
         }
       ]
     },
     {
       "type": "text",
-      "text": "雲林故事館興建之初主要作為日治時期虎尾郡郡守們的宿舍，一入內就會看到挑高木造的日式玄關，穿上現場提供的草蓆鞋，讓參觀者有一種實際生活與此的日常想像。"
+      "text": "推開大門，石造的地板穿透一種沁涼、俐落的氣息，與木造的建築體互相交融，散發著由時間沉澱，迷人好聞的氣味，圓形的窗戶灑落午後鵝黃的光線，店家放置的盆栽與書本，在角落安靜而美好，令人不禁駐足停留半晌，而在不到幾尺的距離，是簡單卻好看的褐色指標與磨石子的旋轉階梯，這樣的搭配也令人玩味，彷彿上樓後會穿越時空，十分有趣。"
+    },
+    {
+      "type": "album",
+      "album": [
+        {
+          "img": "/huwei-joint-office/huwei_joint_office05.jpg",
+          "title": "圓形的舊式窗戶別有風味。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office06.jpg",
+          "title": "簡單的指標在光線下特別別緻。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office07.jpg",
+          "title": "門口的舊式沙發與公告。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office08.jpg",
+          "title": "樓梯的細節與小窗。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office09.jpg",
+          "title": "斑駁的牆面，流淌時間的刻痕。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office10.jpg",
+          "title": "用心繪製的虎尾書局地圖。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office11.jpg",
+          "title": "二樓書局樣貌。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office12.jpg",
+          "title": "陳列著的書品與好看的燈具。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office13.jpg",
+          "title": "古蹟與書的對話交融。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office14.jpg",
+          "title": "舊櫃台已成展櫃，還能看見手感的塗料。"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "若逛累了，可以到一旁的星巴克，點一杯咖啡香，度過午後的悠閒時光，咖啡機的聲響，與爵士音樂相呼應，店員優雅來回於小小的吧檯，而品牌特有的輕工業櫃體，與合同廳舍的牆面十分融洽，在杯體後時隱時現、波浪似地窗花，每個角落都有著令人放鬆的氣氛。在轉角的吧檯旁，是舊有消防局的通道，像是老舊電影會出現的設計，是保留歷史意義之設備。"
+    },
+    {
+      "type": "album",
+      "album": [
+        {
+          "img": "/huwei-joint-office/huwei_joint_office15.jpg",
+          "title": "點餐的櫃檯。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office16.jpg",
+          "title": "販售商品沉靜角落。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office17.jpg",
+          "title": "一樓用餐小區，可以看到街道景色。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office18.jpg",
+          "title": "歷史蹤跡的通道。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office19.jpg",
+          "title": "窗外可以眺望布袋戲館。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office20.jpg",
+          "title": "若坐在窗邊可以觀看路口景色。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office21.jpg",
+          "title": "二樓用餐區的家具，有歐式的風格。"
+        },
+        {
+          "img": "/huwei-joint-office/huwei_joint_office22.jpg",
+          "title": "掛畫營造日本昭和常見咖啡館的風格。"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "如果有空的話，來雲林虎尾逛逛，享受優閒午後時光！"
     }
   ]
 }

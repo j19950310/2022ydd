@@ -1,22 +1,13 @@
 {
   "slug": "yunlin-puppet-theater",
   "title": "【雲林超廣角#文化歷史建築】五、六年級生的回憶！掌中戲之鄉虎尾必訪特色景點「雲林布袋戲館」",
+  "share": "/yunlin-puppet-theater/yunlin_puppet_theater_01.jpg",
   "tag": "attractions",
   "date": "2022.01.09",
-  "location": "雲林縣虎尾鎮林森路一段528號",
-  "phone": "05-6311436",
-  "hour": "10:00-19:00",
+  "location": "632雲林縣虎尾鎮林森路一段498號",
+  "phone": "",
+  "hour": "10:00-18:00",
   "tags": [
-    "虎尾",
-    "文青",
-    "文創聚落",
-    "日式建築",
-    "繪本創作",
-    "玩具展覽",
-    "洪新富",
-    "雲林故事館",
-    "午後時光",
-    "雲林超廣角"
   ],
   "content": [
     {
@@ -25,7 +16,7 @@
     },
     {
       "type": "img",
-      "img": "/yunlin-puppet-theater/yunlin_puppet_theater_001.jpg",
+      "img": "/yunlin-puppet-theater/yunlin_puppet_theater_01.jpg",
       "alt": "整體建築物外貌 ，薄荷綠與紅磚的對比色成迷人對比，黃色水泥也別有一番風味。"
     },
     {
@@ -34,7 +25,7 @@
     },
     {
       "type": "img",
-      "img": "/yunlin-puppet-theater/yunlin_puppet_theater_015.jpg",
+      "img": "/yunlin-puppet-theater/yunlin_puppet_theater_02.jpg",
       "alt": "門口造型的鑄鐵工藝，仔細看才發現是人偶角色的造型！"
     },
     {
@@ -45,15 +36,19 @@
       "type": "album",
       "album": [
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_002.jpg",
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_03.jpg",
+          "title": "入館後有點摩登的地磚風格與木作門框與紅磚，非常有趣。"
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_04.jpg",
           "title": "氣勢磅礡的背景與架式十足的武鬥場面。"
         },
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_004.jpg",
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_05.jpg",
           "title": "孤獨的少俠，背後總有激情的浪花。"
         },
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_003.jpg",
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_06.jpg",
           "title": "戲劇張力十足的城外場景，是一場熱血激情的對話。"
         }
       ]
@@ -66,16 +61,24 @@
       "type": "album",
       "album": [
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_013.jpg",
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_07.jpg",
           "title": "超級有台式風味的戲棚打卡牆。"
         },
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_006.jpg",
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_08.jpg",
           "title": "各國人偶與發展的比較。"
         },
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_007.jpg",
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_09.jpg",
           "title": "與布袋戲齊名「台灣三大偶戲」的皮影戲。"
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_10.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_11.jpg",
+          "title": "過往宮廟常見的舞台與布袋戲偶。"
         }
       ]
     },
@@ -87,29 +90,117 @@
       "type": "album",
       "album": [
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_008.jpg"
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_12.jpg",
+          "title": ""
         },
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_009.jpg",
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_13.jpg",
           "title": "館藏的黑膠唱片包裝實體與懷舊電視佈景。"
         },
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_010.jpg",
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_14.jpg",
           "title": "偶頭的製作工序與上色，精緻奪人眼目。"
         },
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_011.jpg",
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_15.jpg",
           "title": "「木雕彩樓」戲台的製作細節也令人瞠目結舌。"
         },
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_012.jpg"
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_16.jpg",
+          "title": ""
         },
         {
-          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_014.jpg",
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_17.jpg",
           "title": "雲林在地發展史的描繪與整理，清晰明瞭其文化意涵。"
         }
       ]
+    },
+    {
+      "type": "text",
+      "text": "除了布袋戲的展覽，建築物本身也是很棒的歷史遺跡，素雅乾淨的建築物，保留了部分歷史樣貌，與新時代對話與交融，清新的綠色穿插在木作與水泥平衡的溫度，白磚鋪地俐落的氣質，非常有舊官邸的風格！而最特別的是，前身為警察機關所在，在走廊的尾端，竟然保留了拘留所的原始樣貌，實木製作的牢房與監控的磨石子檯子，冰冷的氣息令人不禁肅然起敬，實為特別！"
+    },
+    {
+      "type": "album",
+      "album": [
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_19.jpg",
+          "title": "像是國小走廊的樣貌，也能看見日式建築制式規範的建築風格。"
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_20.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_21.jpg",
+          "title": "不經意的一室，古早味雜貨店的設置。"
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_22.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_23.jpg",
+          "title": "拘留所門口。"
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_24.jpg",
+          "title": "進門即可看見的簡便廁所。"
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_25.jpg",
+          "title": "特殊滯留間，有防自殘的軟墊設計。"
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_26.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_27.jpg",
+          "title": "拘留所禁閉室與監禁台，特殊的隔離間道防止越獄。"
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_28.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_29.jpg",
+          "title": "結合布袋戲台詞，充滿趣味的打卡版。"
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_30.jpg",
+          "title": "目前尚未開放，但令人好奇的金光大戲院。"
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_31.jpg",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "參觀完了，裡面還有飲食部與二樓的禮品區，可以稍作休憩。也可以到附近的雲林故事館或是虎尾沙龍、合同廳舍逛逛，許多好玩的打卡景點與地方故事等你解鎖，快來虎尾雲林，度過充實美好、文藝十足的時光吧！"
+    },
+    {
+      "type": "img",
+      "img": "/yunlin-puppet-theater/yunlin_puppet_theater_32.jpg",
+      "alt": "飲食部"
+    },
+    {
+      "type": "album",
+      "album": [
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_33.jpg",
+          "title": ""
+        },
+        {
+          "img": "/yunlin-puppet-theater/yunlin_puppet_theater_34.jpg",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "感受舊有古色，一齊品味古香吧！"
     }
-    
   ]
 }

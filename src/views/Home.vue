@@ -2,6 +2,7 @@
 import { onMounted, ref } from "vue"
 import ButtonMore from "@/components/ButtonMore.vue"
 import EventSection from "@/components/EventSection.vue"
+import TopicItem from "@/components/TopicItem.vue"
 import Video from "@/components/Video.vue"
 import Lottie from "lottie-web"
 import { vBackgroundImage as vBg } from '@/plugin/directives'
@@ -17,7 +18,7 @@ import video1 from "@/assets/video/新聞處影視補助_布袋戲篇.mp4"
 import video2 from "@/assets/video/新聞處影視補助_花生篇.mp4"
 import video3 from "@/assets/video/新聞處影視補助_番薯篇.mp4"
 
-import { posts, tags } from '@/data'
+import { posts, tags, mapPostItem } from '@/data'
 // import imgDecoLeft from '@/assets/img_index_bg_left.png';
 // import imgDecoRight from '@/assets/img_index_bg_right.png';
 const isMobile = useMediaQuery('(max-width: 576px)')
@@ -40,18 +41,7 @@ onMounted(() => {
   }))
 })
 
-const TopicItems = posts.map(item => {
-  const { slug, title, tag: _tag } = item
-  const tag = tags.find(tag => tag.key === _tag)
-  const image = item.content.find((block) => block.type === 'img')
-  return {
-    to: `/topic/${slug}`,
-    tag: tag.name,
-    color: tag.color,
-    image: image && image.img,
-    title
-  }
-})
+const TopicItems = posts.map(mapPostItem)
 
 
 </script>
@@ -100,20 +90,7 @@ const TopicItems = posts.map(item => {
           </div>
         </div>
         <div class="home__topic-list">
-          <div v-for="(item, key) in TopicItems" class="home__topic-list-item" :key="key">
-            <div class="home__topic-list-item-img" v-bg="item.image">
-
-            </div>
-            <div class="home__topic-list-item-tag" :style="{
-              '--color': item.color,
-            }">
-              {{ item.tag }}
-            </div>
-            <h3 class="home__topic-list-item-title">
-              {{ item.title }}
-            </h3>
-            <router-link :to="item.to"></router-link>
-          </div>
+          <TopicItem v-for="(item, key) in TopicItems" v-bind="item" :key="item.slug"></TopicItem>
         </div>
         <div class="home__topic-all">
           <router-link to="/topic">
