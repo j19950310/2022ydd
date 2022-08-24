@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { posts } from './src/data.js'
+import { posts } from './src/data.js' assert {type: "json"}
 const postsMeta = posts.map((post)=>([
   './dist',
   `./dist/topic/${post.slug}`,
