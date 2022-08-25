@@ -12,7 +12,11 @@ import Header from "@/components/Header.vue";
         <div class="app__deco-item"></div>
         <div class="app__deco-item"></div>
       </div>
-      <router-view></router-view>
+      <router-view v-slot="{ Component }">
+        <transition name="fade">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </div>
   </div>
 </template>

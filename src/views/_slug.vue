@@ -124,6 +124,10 @@ onMounted(() => {
   &__head {
     padding: 67px 105px;
 
+    @include media-breakpoint-down('sm') {
+      padding: 40px 20px;
+    }
+
     h1 {
       font-size: 36px;
       line-height: 1.36;
@@ -131,6 +135,10 @@ onMounted(() => {
       letter-spacing: 0px;
       color: #2d9ad9;
       padding-bottom: 32px;
+
+      @include media-breakpoint-down('sm') {
+        font-size: 24px;
+      }
     }
 
     &-wrap {
@@ -143,12 +151,22 @@ onMounted(() => {
       padding: 8px 24px 12px;
       margin-right: 12px;
       color: #ffffff;
+
+      @include media-breakpoint-down('sm') {
+        padding: 4px 8px 4px;
+        font-size: 16px;
+      }
     }
 
     &-date {
       font-weight: 500;
       letter-spacing: 2px;
       color: #aeaeae;
+
+      @include media-breakpoint-down('sm') {
+        padding-top: 4px;
+        font-size: 16px;
+      }
     }
   }
 
@@ -166,6 +184,10 @@ onMounted(() => {
     &-img {
       margin-top: 67px;
 
+      @include media-breakpoint-down('sm') {
+        margin-top: 30px;
+      }
+
       &::before {
         content: '';
         display: block;
@@ -182,6 +204,10 @@ onMounted(() => {
       font-stretch: normal;
       letter-spacing: 1px;
       color: #535353;
+
+      @include media-breakpoint-down('sm') {
+        padding: 40px 20px;
+      }
     }
 
     &-album {
@@ -189,6 +215,14 @@ onMounted(() => {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 45px;
+
+      @include media-breakpoint-down('sm') {
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+      }
 
       &-item {
         &-img {
@@ -206,6 +240,10 @@ onMounted(() => {
           font-size: 18px;
           font-weight: 500;
           line-height: 1;
+
+          @include media-breakpoint-down('sm') {
+            font-size: 16px;
+          }
 
           &::before {
             position: absolute;
@@ -228,6 +266,11 @@ onMounted(() => {
   &__info {
     padding: 67px 105px 0;
 
+    @include media-breakpoint-down('sm') {
+      padding: 40px 20px;
+
+    }
+
     &-row {
       position: relative;
       padding-left: 40px;
@@ -247,6 +290,10 @@ onMounted(() => {
       letter-spacing: 2px;
       color: #2d9ad9;
       line-height: 1.5;
+
+      @include media-breakpoint-down('sm') {
+        font-size: 24px;
+      }
     }
 
     &-desc {
@@ -255,12 +302,24 @@ onMounted(() => {
       font-weight: 300;
       color: #535353;
       line-height: 1.5;
+
+      @include media-breakpoint-down('sm') {
+        font-size: 16px;
+      }
     }
   }
 
   &__tags {
     padding: 67px 105px;
     margin: -6px;
+
+    &:empty {
+      display: none;
+    }
+
+    @include media-breakpoint-down('sm') {
+      padding: 40px 20px;
+    }
 
     span {
       padding: 6px;

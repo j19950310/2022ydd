@@ -16,7 +16,7 @@ const postsMeta = posts.map((post)=>([
     TITLE: post.title,
     URL: `/topic/${post.slug}`,
     DESC: post.desc || post.title,
-    IMAGE: post.share
+    IMAGE: `https://ydd.go-unit.com/${post.share}`
   }
 ]))
 
@@ -25,7 +25,7 @@ const list = [
     './dist',
     './dist',
     {
-      TITLE: "雲的觀察日誌|首頁",
+      TITLE: "雲的觀察日誌 | 首頁",
       URL: '/',
       DESC: '首頁',
       IMAGE: '/assets/img_slogan.4962dfee.png'
@@ -35,7 +35,7 @@ const list = [
     './dist',
     './dist/topic',
     {
-      TITLE: "雲的觀察日誌|精選文章",
+      TITLE: "雲的觀察日誌 | 精選文章",
       URL: '/topic',
       DESC: '精選文章',
       IMAGE: '/assets/img_slogan.4962dfee.png'

@@ -105,6 +105,11 @@ const currentTopicItems = computed(() => {
     align-items: center;
     justify-content: space-between;
 
+    @include media-breakpoint-down('sm') {
+      overflow-x: auto;
+      max-width: 100%;
+    }
+
     &-item {
       padding: 0px 24px;
       font-size: 24px;
@@ -114,6 +119,11 @@ const currentTopicItems = computed(() => {
       color: #ffffff;
       transition: 0.3s;
       cursor: pointer;
+      white-space: nowrap;
+
+      @include media-breakpoint-down('sm') {
+        padding: 0px 16px;
+      }
 
       &.-active {
         color: #68c8ff;

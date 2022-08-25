@@ -4,6 +4,7 @@ $bg-gradient-reverse: linear-gradient(to bottom, transparent 0%, #000000 100%);
 
 // Header
 $header-height: 80px;
+$header-height-mobile: 60px;
 $header-padding: 0 20px;
 
 // Color
@@ -19,6 +20,7 @@ $duration: (
 
 $z-index: (
   header: 100,
+  header-overlap: 101,
   extend-post: 99,
 );
 
