@@ -20,7 +20,7 @@ router.afterEach(() => {
       <div class="header__item -links">
         <router-link class="header__item-link" to="/">首頁</router-link>
         <router-link class="header__item-link" to="/topic">主題文章</router-link>
-        <router-link class="header__item-link" to="/about">關於我們</router-link>
+        <!-- <router-link class="header__item-link" to="/about">關於我們</router-link> -->
       </div>
     </div>
     <div v-else class="header__mobile">
